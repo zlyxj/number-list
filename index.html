@@ -3,14 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>数字比较</title>
+    <script>
+      function cuigeng()
+        {
+          if(localstorage.cgcount)
+          {
+            localstorage.cgcount=Number(localstorage.cgcount)+1
+          } else {
+            localstorage.cgcount=1
+          }
+          document.getElementById("cg").innerHTML="点我催更(你催更了" + localstorage.cgcount + "次)"
+    </script>
   </head>
   <body style="font-family:Monospace">
-    <h1>增量游戏君的数字比较(v0.1.3)</h1>
+    <h1>增量游戏君的数字比较(v0.1.4)</h1>
     <a href="changelog.html">点我查看更新日志</a>
-    <p>0</p>
+    <p>0</p6
     <p>1</p>
     <p>2</p>
+    <p>e(≈2.71)</p>
     <p>3</p>
+    <p>π(≈3.14)</p>
     <p>4</p>
     <p>5</p>
     <p>6</p>
@@ -28,6 +41,7 @@
     <p>90</p>
     <p>100</p>
     <p>200</p>
+    <p>256=2<sup>8</sup></p>
     <p>300</p>
     <p>400</p>
     <p>500</p>
@@ -47,6 +61,7 @@
     <p>10,000</p>
     <p>20,000</p>
     <p>50,000</p>
+    <p>65,536=2<sup>16</sup></p>
     <p>100,000</p>
     <p>114,514</p>
     <p>200,000</p>
@@ -56,6 +71,7 @@
     <p>10,000,000</p>
     <p>100,000,000</p>
     <p>1,000,000,000</p>
+    <p>2,147,483,647=2<sup>31</sup>-1</p>
     <p>10<sup>10</sup></p>
     <p>10<sup>11</sup></p>
     <p>10<sup>12</sup></p>
@@ -67,5 +83,23 @@
     <p>10<sup>25</sup></p>
     <p>10<sup>30</sup></p>
     <p>10<sup>33</sup>(Decillion)</p>
+    <p>10<sup>35</sup></p>
+    <p>10<sup>40</sup></p>
+    <p>10<sup>45</sup></p>
+    <p>10<sup>50</sup></p>
+    <p>10<sup>60</sup></p>
+    <p>10<sup>70</sup></p>
+    <p>10<sup>80</sup></p>
+    <p>10<sup>90</sup></p>
+    <p>10<sup>100</sup></p>
+    <p>10<sup>120</sup></p>
+    <p>10<sup>140</sup></p>
+    <p>10<sup>160</sup></p>
+    <p>10<sup>180</sup></p>
+    <p>10<sup>200</sup></p>
+    <p>10<sup>250</sup></p>
+    <p>10<sup>300</sup></p>
+    <p>2<sup>1,024</sup>≈1.79×10<sup>308</sup></p>
+    <button onclick="cuigeng()" id="cg">点我催更(你催更了0次)</button>
   </body>
 </html>
