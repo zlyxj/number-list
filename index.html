@@ -4,15 +4,11 @@
     <meta charset="utf-8">
     <title>数字比较</title>
     <script>
+      var c=0;
       function cuigeng()
         {
-          if(localstorage.cgcount)
-          {
-            localstorage.cgcount=Number(localstorage.cgcount)+1
-          } else {
-            localstorage.cgcount=1
-          }
-          document.getElementById("cg").innerHTML="点我催更(你催更了" + localstorage.cgcount + "次)"
+          c=c+1;
+          document.getElementById("cg")="你催更了"+c+"次”;
         }
     </script>
   </head>
@@ -101,6 +97,8 @@
     <p>10<sup>250</sup></p>
     <p>10<sup>300</sup></p>
     <p>2<sup>1,024</sup>≈1.79×10<sup>308</sup></p>
-    <button onclick="cuigeng()" id="cg">点我催更(你催更了0次)</button>
+    <button onclick="cuigeng()" id="cg" type="button">点我催更</button>
+    <p>你催更了0次</p>
+    <p>催更999次作者<span style="font-size:10px">不一定</span>会立刻更新</p>
   </body>
 </html>
