@@ -4,9 +4,40 @@
     <meta charset="utf-8">
     <title>数字比较</title>
   </head>
-  <body style="font-family:Monospace">
-    <h1>增量游戏君的数字比较(v0.1.5)</h1>
+  <style>
+    .normal{
+      background-color:white;
+      color:black;
+      font-family:sans-serif;
+    }
+    .blue{
+      background-color:cyan;
+      color:"#0000FF";
+      font-family:sans-serif;
+    }
+    .terminal{
+      background-color:black;
+      color:green;
+      font-family:"Consolas","Menlo","Courier",monospace;
+    }
+  </style>
+  <script>
+    function theme1(){
+      document.getElementById("bd").className="normal";
+    }
+    function theme2(){
+      document.getElementById("bd").className="blue";
+    }
+    function theme3(){
+      document.getElementById("bd").className="terminal";
+    }
+  </script>
+  <body class="normal" id="bd">
+    <h1>增量游戏君的数字比较(v0.2.0)</h1>
     <a href="changelog.html">点我查看更新日志</a>
+    <button onclick="theme1()">普通主题</button
+    <button onclick="theme2()">蓝色主题</button>
+    <button onclick="theme3()">终端主题</button>
     <p>0</p>
     <p>1</p>
     <p>2</p>
@@ -100,8 +131,14 @@
     <p>10<sup>800</sup></p>
     <p>10<sup>900</sup></p>
     <p>10<sup>1,000</sup></p>
+    <p>10<sup>1,100</sup></p>
     <p>10<sup>1,250</sup></p>
     <p>10<sup>1,500</sup></p>
+    <p>10<sup>1,750</sup></p>
+    <p>10<sup>2,000</sup></p>
+    <p>10<sup>2,250</sup></p>
+    <p>10<sup>2,500</sup></p>
+    <p>10<sup>3,000</sup></p>
     <p>如果想提供建议或者数字可以在百度贴吧序数增量吧@增量游戏君的帖子评论！</p>
   </body>
 </html>
